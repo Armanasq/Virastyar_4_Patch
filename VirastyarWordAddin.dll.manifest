@@ -1,0 +1,359 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="VirastyarWordAddin.dll" version="1.0.0.0" publicKeyToken="ff2cf56caa65669b" language="neutral" processorArchitecture="msil" type="win32" />
+  <description xmlns="urn:schemas-microsoft-com:asm.v1">VirastyarWordAddin</description>
+  <application />
+  <entryPoint>
+    <co.v1:customHostSpecified />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Office.Tools" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Office.Tools.Common" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Office.Tools.v4.0.Framework" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.VisualStudio.Tools.Applications.Runtime" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ICSharpCode.SharpZipLib.dll" size="225280">
+      <assemblyIdentity name="ICSharpCode.SharpZipLib" version="0.86.0.518" publicKeyToken="1C8E624E8093263A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>l0zgMZYk7+mzxxSEogg9EVv1CRU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ManagedWinapi.dll" size="100352">
+      <assemblyIdentity name="ManagedWinapi" version="0.3.1.0" publicKeyToken="FF2CF56CAA65669B" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>MSNZ/4MeBx1jPm8YjI6FDpkY2p4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Office.Tools.Common.v4.0.Utilities.dll" size="32664">
+      <assemblyIdentity name="Microsoft.Office.Tools.Common.v4.0.Utilities" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>CtnCtseaMyfROIGe0ENdGO6arHg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="NLog.dll" size="368640">
+      <assemblyIdentity name="NLog" version="2.0.0.0" publicKeyToken="5120E14C03D0593C" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>TTYJg448fUh+dssi6h2e29JXgVQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Virastyar.Microsoft.Office.Word.ContentReader.dll" size="79872">
+      <assemblyIdentity name="Virastyar.Microsoft.Office.Word.ContentReader" version="2.7.0.32063" publicKeyToken="1C8E624E8093263A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>Mwbxn+hbd2VjEP3UGq8av3VgGbk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Virastyar.NLP.Algorithms.GraphicalModels.Viterbi.dll" size="24576">
+      <assemblyIdentity name="Virastyar.NLP.Algorithms.GraphicalModels.Viterbi" version="1.0.0.0" publicKeyToken="1C8E624E8093263A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>J/7AmVQGeSm5fRd1hCdHd9oc6Go=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Virastyar.NLP.Morphology.Inflection.dll" size="455680">
+      <assemblyIdentity name="Virastyar.NLP.Morphology.Inflection" version="3.0.0.32064" publicKeyToken="1C8E624E8093263A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>J1qSXOArs01fuWaWjI8dIOcVStg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Virastyar.NLP.PartOfSpeechTagger.dll" size="11776">
+      <assemblyIdentity name="Virastyar.NLP.PartOfSpeechTagger" version="2.0.1.32063" publicKeyToken="1C8E624E8093263A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>TGrrY/HypKq0MfRpn3e5jRJHAZ8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Virastyar.NLP.TextProofing.PunctuationII.dll" size="48640">
+      <assemblyIdentity name="Virastyar.NLP.TextProofing.PunctuationII" version="3.0.0.32073" publicKeyToken="1C8E624E8093263A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>e++oUsCX1dvlTYpX5yXzNII/OlA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Virastyar.NLP.TextProofing.Purification.dll" size="32256">
+      <assemblyIdentity name="Virastyar.NLP.TextProofing.Purification" version="3.0.0.32074" publicKeyToken="1C8E624E8093263A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>Q3R3YS/oM2eyqf3GoC7FtT0r+i0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Virastyar.NLP.TextProofing.SpellChecker.dll" size="61440">
+      <assemblyIdentity name="Virastyar.NLP.TextProofing.SpellChecker" version="3.0.0.32073" publicKeyToken="1C8E624E8093263A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>RWlEGpvB8rbKOaIyyjrtmMSlTjM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Virastyar.NLP.Transliteration.Romanizer.dll" size="22528">
+      <assemblyIdentity name="Virastyar.NLP.Transliteration.Romanizer" version="2.7.0.32074" publicKeyToken="1C8E624E8093263A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>+Je1VB7vyXpXnfLZq9tmbokoATw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Virastyar.NLP.Utility.SequenceContainer.dll" size="81408">
+      <assemblyIdentity name="Virastyar.NLP.Utility.SequenceContainer" version="2.0.0.0" publicKeyToken="1C8E624E8093263A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>uKZMTqy1r7MuseLXPu6iVHSKo2g=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Virastyar.NLP.Utility.StringDistance.dll" size="23552">
+      <assemblyIdentity name="Virastyar.NLP.Utility.StringDistance" version="3.0.0.32063" publicKeyToken="1C8E624E8093263A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>JWzTfBOy/RKq5X/SOmqXpHqIN6c=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Virastyar.NLP.Utility.WordContainer.dll" size="22528">
+      <assemblyIdentity name="Virastyar.NLP.Utility.WordContainer" version="2.7.0.32063" publicKeyToken="1C8E624E8093263A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>C5jTjoc6E/reyrD0KgcxDgARgxA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Virastyar.NLP.Utility.WordGenerator.dll" size="15872">
+      <assemblyIdentity name="Virastyar.NLP.Utility.WordGenerator" version="3.0.0.32063" publicKeyToken="1C8E624E8093263A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>JXNHqZzocZjww6pq0ZdsmL6MMnc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Virastyar.PersianTools.dll" size="297472">
+      <assemblyIdentity name="Virastyar.PersianTools" version="3.0.0.32062" publicKeyToken="1C8E624E8093263A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>ijhuib2XADHZEav5tmDcHIH14YU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Virastyar.Utility.dll" size="131072">
+      <assemblyIdentity name="Virastyar.Utility" version="2.7.0.32062" publicKeyToken="1C8E624E8093263A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>8D3D11Wckq3a92q6M3gFfzhEYvE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="VirastyarWordAddin.dll" size="4435968">
+      <assemblyIdentity name="VirastyarWordAddin" version="4.0.0.32694" publicKeyToken="634b8f05897f26c9" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>lwJoqnSr9HckAmCDRrrdqmLewxk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Resources\IconAddDic.png" size="1272">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>jnR9fVzsijbOnNxDWQWRgqMlTbc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\IconDelDic.png" size="1255">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>50wswhAy8jA+Z7M+IeKWcgjWoyY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\IconEditDic.png" size="1292">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>GEzXDnZ2JwUHIpufOT/QtBhJ9gY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\IconExtractDic.png" size="1052">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Bl2t64CrpMj1Ig2mOBWeIEkdLPw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\IconSettingsSmall.png" size="741">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>y78EbmddVEPfKkLOHj+axaBKO2c=</dsig:DigestValue>
+    </hash>
+  </file>
+  <vstav3:addIn xmlns:vstav3="urn:schemas-microsoft-com:vsta.v3">
+    <vstav3:entryPointsCollection>
+      <vstav3:entryPoints>
+        <vstav3:entryPoint class="VirastyarWordAddin.ThisAddIn">
+          <assemblyIdentity name="VirastyarWordAddin" version="4.0.0.32694" publicKeyToken="634b8f05897f26c9" language="neutral" processorArchitecture="msil" />
+        </vstav3:entryPoint>
+      </vstav3:entryPoints>
+    </vstav3:entryPointsCollection>
+    <vstav3:update enabled="true">
+      <vstav3:expiration maximumAge="7" unit="days" />
+    </vstav3:update>
+    <vstav3:application>
+      <vstov4:customizations xmlns:vstov4="urn:schemas-microsoft-com:vsto.v4">
+        <vstov4:customization>
+          <vstov4:appAddIn application="Word" loadBehavior="3" keyName="VirastyarWordAddin">
+            <vstov4:friendlyName>VirastyarWordAddin</vstov4:friendlyName>
+            <vstov4:description>VirastyarWordAddin</vstov4:description>
+          </vstov4:appAddIn>
+        </vstov4:customization>
+      </vstov4:customizations>
+    </vstav3:application>
+  </vstav3:addIn>
+</asmv1:assembly>
